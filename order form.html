@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Yard Order</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/CSS">
+    img{
+        border-radius: 50%;}
+        </style>
+</head>
+<body>
+    <h1>Place your Pizza Yard order</h1>
+    <img src="images/image5.JPG" height="200" width="210" alt="avatar">
+    <br>
+    <h2>Fill out the information below</h2>
+    <fieldset>
+    <form action="success.html" method="POST" enctype="text/plain">
+        <label for="Full name">Full name (*)</label>
+        <input type="text" id="Full name" name="Full name" required>
+        <br>
+        <br>
+        <label for="email">E-mail address (*)</label>
+        <input type="email" id="email" name="Email" required>
+        <br>
+        <br>
+        <label for="tel">Phone number (*)</label>
+        <input type="tel" id="tel" name="tel" required>
+    </fieldset>
+        <br>
+    <h2>Customise your pizza</h2>
+    <fieldset>
+        <label for="pizza sizes">Choose your pizza size:</label>
+            <select id="pizza sizes" name="pizza sizes">
+                <option value="Extra Large £17.99">Extra Large £17.99</option>
+                <option value="Large £15.99">Large £15.99</option>
+                <option value="Medium £13.99">Medium £13.99</option>
+                <option value="Small £9.99">Small £9.99</option>
+            </select>
+            <br>
+            <br>
+        <label for="pizza crusts">Choose your pizza crust:</label>
+        <select id="pizza crusts" name="pizza crusts">
+            <option value="Thin Crust">Thin Crust</option>
+            <option value="Deep Pan">Deep Pan</option>
+            <option value="New York Style">New York Style</option>
+            <option value="Stuffed Crust">Stuffed Crust (+ £2.00)</option>
+            <option value="Gluten Free">Gluten Free</option>
+            <br>
+            <br>
+        </select>
+    </fieldset>
+    <br>
+    <h2>Choose your pizza style</h2>
+    <h3>Meats</h3>
+    <input type="radio" id="hawaiian" name="pizza style">
+    <label for="hawaiian">Hawaiian</label>
+    <input type="radio" id="pepperoni" name="pizza style">
+    <label for="pepperoni">Pepperoni</label>
+    <input type="radio" id="american meat feast" name="pizza style">
+    <label for="american meat feast">American Meat Feast</label>
+    <input type="radio" id="chicken" name="pizza style">
+    <label for="chicken">Buffalo Chicken</label>
+    <h3>Vegeterian</h3>
+    <input type="radio" id="cheese and tomato" name="pizza style">
+    <label for="cheese and tomato">Cheese and Tomato</label>
+    <input type="radio" id="the greek" name="pizza style">
+    <label for="the greek">The Greek</label>
+    <input type="radio" id="veggie volcano" name="pizza style">
+    <label for="veggie volcano">Veggie Volcano</label>
+    <input type="radio" id="hot pepper party" name="pizza style">
+    <label for="hot pepper party">Hot Pepper Party</label>
+    <h3>Vegan</h3>
+    <input type="radio" id="vegan cheese and tomato" name="pizza style">
+    <label for="vegan cheese and tomato">Vegan Cheese and Tomato</label>
+    <input type="radio" id="vegan sausage and pepperoni" name="pizza style">
+    <label for="vegan sausage and pepperoni">Vegan Sausage and Pepperoni</label>
+    <input type="radio" id="the greek vegan" name="pizza style">
+    <label for="the greek vegan">The Greek Vegan</label>
+    <br>
+    <br>
+    <h2>Additional toppings</h2>
+    <input type="checkbox" id="sweetcorn" name="sweetcorn">
+    <label for="sweetcorn">Sweetcorn</label>
+    <input type="checkbox" id="onions" name="onions">
+    <label for="onions">Onions</label>
+    <input type="checkbox" id="truffle oil" name="truffle oil">
+    <label for="truffle oil">Truffle Oil</label>
+    <input type="checkbox" id="salami" name="salami">
+    <label for="salami">Salami</label>
+    <input type="checkbox" id="black olives" name="black olives">
+    <label for="black olives">Black Olives</label>
+    <input type="checkbox" id="buffalo mozzarella" name="buffalo mozzarella">
+    <label for="buffalo mozzarella">Buffalo Mozzarella</label>
+    <br>
+    <input type="checkbox" id="ricotta" name="ricotta">
+    <label for="ricotta">Ricotta</label>
+    <input type="checkbox" id="aubergine" name="aubergine">
+    <label for="aubergine">Aubergine</label>
+    <input type="checkbox" id="mushrooms" name="mushrooms">
+    <label for="mushrooms">Mushrooms</label>
+    <input type="checkbox" id="rocket" name="rocket">
+    <label for="rocket">Rocket</label>
+    <input type="checkbox" id="spinach" name="spinach">
+    <label for="spinach">Spinach</label>
+    <input type="checkbox" id="pumpkin seeds" name="pumpkin seeds">
+    <label for="pumpkin seeds">Pumpkin seeds</label>
+    <input type="checkbox" id="egg" name="egg">
+    <label for="egg">Egg</label>
+    <br>
+    <br>
+    <h2>Any Allergy Information</h2>
+    <label for="Allergy information"></label>
+    <textarea id="allergy info" name="allergy info" cols="30" rows="5">Please tell us any allergy information here...
+    </textarea>
+    <br>
+    <br>
+    <h2>How would you like to receive your pizza?</h2>
+    <label for="delivery options">Choose your preference:</label>
+        <select id="delivery options" name="delivery options">
+            <option value="Eat-in">Eat-in</option>
+            <option value="Collection">Collection</option>
+            <option value="Delivery">Delivery</option>
+        </select>
+        <br>
+        <br>
+    <h2>Enter your payment information</h2>
+    <input type="checkbox" id="payment" name="payment" checked>
+    <label for="payment">Save my details for next time</label>
+    <br>
+    <br>
+    <fieldset>
+    <label for="card name">Name on card (*)</label>
+    <input type="text" id="card name" name="card name" placeholder="Mr John Doe" required>
+    <br>
+    <br>
+    <label for="card number">Enter your 16 digit card number (*)<label>
+    <input type="text" id="card number" name="card number" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+    <br>
+    <br>
+    <label for="expiry">Date of expiry</label>
+    <input type="date" id="expiry" name="expiry" placeholder="00 00 00">
+    <br>
+    <br>
+    <label for="CVV">CVV (three digits on back of card)</label>
+    <input type="text" id="CVV" name="CVV" placeholder="XXX">
+    </fieldset>
+
+    
+
+    
+
+<!--within this form next put in Pizza size, pizza crust, base (bbq, tomato etc), toppings-->
+<br>
+<br>
+<button type="submit">PLACE YOUR ORDER</button>
+    </form>
+<br>
+<br>
+
+<!-- then do allergy information in a big box
+    then do Pick up method, eat-in, delivery, takeaway in a dropdown list-->
+<!--then go through to payment, which will have a checkbox and 'save my payment details for next time'
+    then it will have card number, expiry date, security code 'three digits on the back of card' appearing within the box 
+    add images at the end 
+</body>
+</html>
