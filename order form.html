@@ -12,17 +12,17 @@
 </head>
 <body>
     <h1>Place your Pizza Yard order</h1>
-    <img src="images/image5.JPG" height="200" width="210" alt="avatar">
+    <img src="images/image5.jpg" height="200px" width="210px" alt="avatar">
     <br>
-    <h2>Fill out the information below</h2>
+    <h2>Fill out the info below</h2>
     <fieldset>
     <form action="success.html" method="POST" enctype="text/plain">
         <label for="Full name">Full name (*)</label>
-        <input type="text" id="Full name" name="Full name" required>
+        <input type="text" id="Full name" name="Full name" required placeholder="Pizza Man">
         <br>
         <br>
         <label for="email">E-mail address (*)</label>
-        <input type="email" id="email" name="Email" required>
+        <input type="email" id="email" name="Email" required placeholder="brbeatingpizza@gmail.com">
         <br>
         <br>
         <label for="tel">Phone number (*)</label>
@@ -44,7 +44,7 @@
         <select id="pizza crusts" name="pizza crusts">
             <option value="Thin Crust">Thin Crust</option>
             <option value="Deep Pan">Deep Pan</option>
-            <option value="New York Style">New York Style</option>
+            <option value="Silician">Sicilian</option>
             <option value="Stuffed Crust">Stuffed Crust (+ £2.00)</option>
             <option value="Gluten Free">Gluten Free</option>
             <br>
@@ -54,30 +54,31 @@
     <br>
     <h2>Choose your pizza style</h2>
     <h3>Meats</h3>
+    <!--to only select one option on radio, you need to make the names all the same-->
     <input type="radio" id="hawaiian" name="pizza style">
     <label for="hawaiian">Hawaiian</label>
-    <input type="radio" id="pepperoni" name="pizza style">
-    <label for="pepperoni">Pepperoni</label>
-    <input type="radio" id="american meat feast" name="pizza style">
-    <label for="american meat feast">American Meat Feast</label>
-    <input type="radio" id="chicken" name="pizza style">
-    <label for="chicken">Buffalo Chicken</label>
+    <input type="radio" id="pepperoni and spicy honey" name="pizza style">
+    <label for="pepperoni and spicy honey">Pepperoni and Spicy Honey</label>
+    <input type="radio" id="napoli salami" name="pizza style">
+    <label for="napoli salami">Napoli Salami</label>
+    <input type="radio" id="wagyu beef" name="pizza style">
+    <label for="wagyu beef">Wagyu Beef and Caramelised Onions</label>
     <h3>Vegeterian</h3>
-    <input type="radio" id="cheese and tomato" name="pizza style">
-    <label for="cheese and tomato">Cheese and Tomato</label>
-    <input type="radio" id="the greek" name="pizza style">
-    <label for="the greek">The Greek</label>
-    <input type="radio" id="veggie volcano" name="pizza style">
-    <label for="veggie volcano">Veggie Volcano</label>
-    <input type="radio" id="hot pepper party" name="pizza style">
-    <label for="hot pepper party">Hot Pepper Party</label>
+    <input type="radio" id="margherita" name="pizza style">
+    <label for="margherita">Margherita</label>
+    <input type="radio" id="greek summer" name="pizza style">
+    <label for="greek summer">Greek Summer</label>
+    <input type="radio" id="roasted butternut squash and truffle" name="pizza style">
+    <label for="roasted butternut squash and truffle">Roasted butternut squash and truffle</label>
+    <input type="radio" id="four cheese" name="pizza style">
+    <label for="four cheese">Four Cheese</label>
     <h3>Vegan</h3>
-    <input type="radio" id="vegan cheese and tomato" name="pizza style">
-    <label for="vegan cheese and tomato">Vegan Cheese and Tomato</label>
+    <input type="radio" id="vegan margherita" name="pizza style">
+    <label for="vegan margherita">Vegan Margherita</label>
     <input type="radio" id="vegan sausage and pepperoni" name="pizza style">
     <label for="vegan sausage and pepperoni">Vegan Sausage and Pepperoni</label>
-    <input type="radio" id="the greek vegan" name="pizza style">
-    <label for="the greek vegan">The Greek Vegan</label>
+    <input type="radio" id="greek summer vegan" name="pizza style">
+    <label for="greek summer vegan">Greek Summer Vegan</label>
     <br>
     <br>
     <h2>Additional toppings</h2>
@@ -125,14 +126,23 @@
         </select>
         <br>
         <br>
-    <h2>Enter your payment information</h2>
+    <h2>Payment time</h2>
     <input type="checkbox" id="payment" name="payment" checked>
     <label for="payment">Save my details for next time</label>
     <br>
     <br>
     <fieldset>
+    <label for="currency">Currency:</label>
+    <select id="currency" name="currency">
+        <option value="GBP">GBP</option>
+        <option value="EU">EURO</option>
+        <option value="USD">USD</option>
+        <option value="AUD">AUD</option>
+    </select>
+    <br>
+    <br>
     <label for="card name">Name on card (*)</label>
-    <input type="text" id="card name" name="card name" placeholder="Mr John Doe" required>
+    <input type="text" id="card name" name="card name" placeholder="Mr Pizza Man" required>
     <br>
     <br>
     <label for="card number">Enter your 16 digit card number (*)<label>
